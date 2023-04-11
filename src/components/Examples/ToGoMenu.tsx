@@ -6,7 +6,7 @@ const Paragraph = "text-center text-sm";
 function ToGoMenu() {
   return (
     <div>
-      <div className="mt-5">
+      <div className="mx-auto mt-5 w-96">
         <section className={section}>
           <h2 className={H2}>falafel</h2>
           <p className={Paragraph}>

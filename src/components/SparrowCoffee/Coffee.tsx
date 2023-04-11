@@ -1,7 +1,7 @@
 import coffee from "./CoffeeData"
 
-const Notes = "text-xs text-slate-500 text-[#a99765]"
-const Info = "text-white"
+const Notes = "text-xs text-[#a99765]"
+const Info = "text-white capitalize"
 export default function SparrowCoffee() {
   return (
     <div className="mx-auto  mt-5 rounded-sm">
@@ -11,8 +11,10 @@ export default function SparrowCoffee() {
             <img className="h-auto" src={coffee.image} alt="Espresso" />
             <div className="">
               <h1 className="text-sm font-medium">{coffee.name}</h1>
-              <p className="text-white">{coffee.price}</p>
-              <p className="w-auto text-xs text-white">{coffee.description}</p>
+              <p className="mb-2 text-base text-[#a99765]">
+                Price: <span className={Info}>{coffee.price}</span>
+              </p>
+              <p className="mb-2 w-auto text-xs text-white">{coffee.description}</p>
               <div className="grid grid-cols-3">
                 <p className={Notes}>
                   Flavor: <span className={Info}>{coffee.flavor}</span>
@@ -36,7 +38,7 @@ export default function SparrowCoffee() {
                   Processed: <span className={Info}>{coffee.Processed}</span>
                 </p>
                 <p className={Notes}>
-                  Varietal <span className={Info}>{coffee.Varietal}</span>
+                  Varietal: <span className={Info}>{coffee.Varietal}</span>
                 </p>
                 <div>
                   <p className={Notes}>

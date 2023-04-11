@@ -1,6 +1,5 @@
 import coffee from "./CoffeeData"
 
-const classes = "text-sm text-gray-500"
 const Notes = "text-xs text-slate-500 text-[#a99765]"
 const Info = "text-white"
 export default function SparrowCoffee() {
